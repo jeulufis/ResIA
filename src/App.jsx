@@ -1,11 +1,18 @@
 import "./App.css";
 
+import Hero from "./components/Hero"
+
 function App() {
   return (
     <>
-      <div>
-        <h1>Vite + React</h1>
-      </div>
+      <main>
+        <div className="main">
+          <div className="gradient"/>
+        </div>
+        <div className="app">
+          <Hero />
+        </div>
+      </main>
     </>
   );
 }

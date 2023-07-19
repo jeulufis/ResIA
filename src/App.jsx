@@ -1,6 +1,7 @@
 import "./App.css";
 
-import Hero from "./components/Hero"
+import Hero from "./components/Hero";
+import Demo from "./components/Demo"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         </div>
         <div className="app">
           <Hero />
+          <Demo />
         </div>
       </main>
     </>

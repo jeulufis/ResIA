@@ -7,13 +7,19 @@ export default function Demo() {
     url: "",
   });
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert(`Hola ${article.url}`)
+  }
+
   return (
     <section className="mt-16 w-full max-w-xl">
       {/* Search */}
       <div className="flex flex-col w-full gap-2">
+        <p className="mb-2 text-xl font-bold text-gray-700">Input URL</p>
         <form
           className="relative flex justify-center items-center"
-          onSubmit={() => {}}
+          onSubmit={handleSubmit}
         >
           <img
             src={linkIcon}
@@ -22,7 +28,7 @@ export default function Demo() {
           />
           <input
             type="url"
-            placeholder="Enter a URL"
+            placeholder="https://web.whatsapp.com/"
             value={article.url}
             onChange={(e) => {
               setArticle({ ...article, url: e.target.value });

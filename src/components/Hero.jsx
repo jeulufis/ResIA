@@ -5,9 +5,9 @@ const Hero = () => {
     <header className="w-full flex justify-center items-center flex-col">
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
         <div className="flex items-center">
-          <p className="text_logo font-bold text-xl text-white tracking-wider">
+          <p className="text_logo text-xl text-white tracking-wider">
             <span className="text-2xl">M</span>in
-            <span className="font-extrabol orange_gradient">
+            <span className="orange_gradient">
               or
             </span>
           </p>

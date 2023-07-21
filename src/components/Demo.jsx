@@ -58,6 +58,7 @@ export default function Demo() {
       handleSubmit(e);
     }
   };
+
   return (
     <section className="mt-16 w-full max-w-xl">
       {/* Search */}
@@ -79,6 +80,7 @@ export default function Demo() {
             onChange={(e) => {
               setArticle({ ...article, url: e.target.value });
             }}
+            onKeyDown={handleKeyDown}
             required
             className="url_input peer"
           />
@@ -118,7 +120,7 @@ export default function Demo() {
           <img src={loader} alt='loader' className='w-20 h-20 object-contain' />
         ) : error ? (
           <p className='font-inter font-bold text-black text-center'>
-            Well, that wasn't supposed to happen...
+            Well, that wasnt supposed to happen...
             <br />
             <span className='font-satoshi font-normal text-gray-700'>
               {error?.data?.error}

@@ -1,22 +1,29 @@
-import { logo } from "../assets";
+import logo from "../assets/logo.png"
 
 const Hero = () => {
   return (
     <header className="w-full flex justify-center items-center flex-col">
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
         <div className="flex items-center">
-          <img src={logo} alt="sumz_logo" className="lg:w-28" />
-          <p className="font-bold text-xl tracking-wide">
-            Min
-            <span className="font-extrabol text-orange-400 tracking-wide">
-              web
+          <p className="text_logo font-bold text-xl text-white tracking-wider">
+            <span className="text-2xl">M</span>in
+            <span className="font-extrabol orange_gradient">
+              or
             </span>
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-9">
+        <a
+            className="md:text-slate-400 md:font-semibold hidden lg:flex md:hover:text-slate-200 text-black transition-colors hover:text-neutral-100"
+            href="https://grandiose-literature-b18.notion.site/React-Redux-API-Vite-2423a2e895344ccfa6661ae6019f5aaf?pvs=4"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Pricing
+          </a>
           <a
-            className="md:text-slate-400 md:font-semibold hidden lg:flex md:hover:text-slate-500 text-black transition-colors hover:text-neutral-100"
+            className="md:text-slate-400 md:font-semibold hidden lg:flex md:hover:text-slate-200 text-black transition-colors hover:text-neutral-100"
             href="https://grandiose-literature-b18.notion.site/React-Redux-API-Vite-2423a2e895344ccfa6661ae6019f5aaf?pvs=4"
             target="_blank"
             rel="noreferrer"
@@ -46,11 +53,11 @@ const Hero = () => {
         </div>
       </nav>
 
-      <h1 className="head_text">
+      <h1 className="head_text pt-20  ">
         Condense Texts using <br className="max-md:hidden" />
         <span className="orange_gradient ">OpenAI GPT-4</span>
       </h1>
-      <h2 className="desc">
+      <h2 className="desc tracking-wider">
         Enhance Efficiency: Unlock the Power of Minweb, the AI-Powered Article
         Summarizer, to Condense Lengthy Texts into Relevant and Succinct
         Summaries – Empowering your Information Access!
